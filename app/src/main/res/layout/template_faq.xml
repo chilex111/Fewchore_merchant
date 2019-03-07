@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/parentView"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--<View android:id="@+id/view"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />-->
+
+    <LinearLayout android:orientation="horizontal"
+        android:id="@+id/linearContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:weightSum="4.0">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:id="@+id/faqTitle"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5" />
+        <FrameLayout android:layout_gravity="end"
+            android:id="@+id/frameExpand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+            <ImageButton android:layout_gravity="end"
+                android:id="@+id/noDetails"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron"
+                android:contentDescription="@string/app_name" />
+            <ImageButton android:layout_gravity="end"
+                android:id="@+id/moreDetails"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expand"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/grey"/>
+
+        <TextView
+            android:textColor="@color/grey"
+            android:id="@+id/textViewAnswer"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+</LinearLayout>

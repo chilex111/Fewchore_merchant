@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ProfileFragment"
+    android:paddingLeft="10sp"
+    android:orientation="vertical"
+    android:paddingRight="10sp"
+    android:layout_marginLeft="4sp"
+    android:layout_marginRight="4sp"
+    android:layout_marginTop="4dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <merchant.com.our.merchant.view.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@mipmap/placeholder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="18dp"
+            android:layout_marginTop="8sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/code"
+                    android:textStyle="bold"/>
+
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:id="@+id/merchantCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C00662"
+                    android:layout_marginLeft="4dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
+
+            <merchant.com.our.merchant.view.PoppinsBoldTextView
+                android:id="@+id/merchantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Oluwaseyikemi Tomiiwo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal"
+                android:layout_marginEnd="4dp">
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.6"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textStyle="bold"/>
+
+                <merchant.com.our.merchant.view.PoppinsTextView
+                    android:id="@+id/merchantAddress"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:layout_height="wrap_content"
+                    android:hint="Alagomeji Yaba"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp">
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.6"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_number"
+                    android:textStyle="bold"/>
+
+                <merchant.com.our.merchant.view.PoppinsTextView
+                    android:id="@+id/merchantPhone"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:layout_height="wrap_content"
+                    android:hint="08133444260"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="10dp">
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.6"
+                    android:layout_height="wrap_content"
+                    android:text="@string/agent"
+                    android:textStyle="bold"/>
+
+                <merchant.com.our.merchant.view.PoppinsTextView
+                    android:id="@+id/merchantAgent"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:hint="Clover Nig. LTD"
+                    android:textStyle="bold"
+                    android:layout_marginRight="4dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="10dp">
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.6"
+                    android:layout_height="wrap_content"
+                    android:text="@string/territory"
+                    android:textStyle="bold"/>
+
+                <merchant.com.our.merchant.view.PoppinsTextView
+                    android:id="@+id/merchantTerritory"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:hint="Yaba, Lagos"
+                    android:layout_marginRight="4dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginTop="10dp">
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.6"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="@string/loan_status"
+                    android:textStyle="bold"/>
+
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:id="@+id/merchantLoanStatus"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="Eligible"
+                    android:visibility="gone"
+                    android:textColor="@color/green"
+                    android:layout_marginRight="4dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="4"
+                android:layout_marginTop="10dp">
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maximum_loan"
+                    android:layout_weight="1.6"
+                    android:textStyle="bold"/>
+
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:id="@+id/merchantMaxLoan"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="N200,000"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="4"
+                android:layout_marginTop="10dp">
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Unutilized Amount"
+                    android:layout_weight="1.6"
+                    android:textStyle="bold"/>
+
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:id="@+id/merchantCurrentLimit"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="N200,000"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="4"
+                android:layout_marginTop="10dp">
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/outstanding_amount"
+                    android:layout_weight="1.6"
+                    android:textStyle="bold"/>
+
+                <merchant.com.our.merchant.view.PoppinsBoldTextView
+                    android:id="@+id/merchantOutstanding"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:layout_gravity="center"
+                    android:hint="No Outstanding Balance"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/green"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearExtra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearDisbursed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="4"
+                    android:layout_marginTop="10dp">
+                    <merchant.com.our.merchant.view.PoppinsBoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Date Disbursed"
+                        android:layout_weight="1.6"
+                        android:textStyle="bold"/>
+
+                    <merchant.com.our.merchant.view.PoppinsBoldTextView
+                        android:id="@+id/merchantDisbursed"
+                        android:layout_width="0dp"
+                        android:layout_weight="2.4"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearDue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginTop="10dp">
+                    <merchant.com.our.merchant.view.PoppinsBoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loan_due_date"
+                        android:layout_weight="1.6"
+                        android:textStyle="bold"/>
+
+                    <merchant.com.our.merchant.view.PoppinsBoldTextView
+                        android:id="@+id/merchantDueDate"
+                        android:layout_width="0dp"
+                        android:layout_weight="2.4"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearOverDue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="4"
+                    android:layout_marginTop="10dp">
+                    <merchant.com.our.merchant.view.PoppinsBoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/days_over_due"
+                        android:layout_weight="1.6"
+                        android:textStyle="bold"/>
+
+                    <merchant.com.our.merchant.view.PoppinsBoldTextView
+                        android:id="@+id/merchantOverDue"
+                        android:layout_width="0dp"
+                        android:layout_weight="2.4"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textColor="#af050a"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                    <merchant.com.our.merchant.view.PoppinsButton
+                        android:id="@+id/buttonNext"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:layout_weight="2"
+                        android:text="@string/request_loan"
+                        android:background="@drawable/rectangle_green"/>
+
+                <merchant.com.our.merchant.view.PoppinsButton
+                    android:id="@+id/buttonPayNow"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/pay_now"
+                    android:background="@drawable/rectangle_green"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
